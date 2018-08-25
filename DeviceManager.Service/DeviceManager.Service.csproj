@@ -41,7 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IServices\ICategoryService.cs" />
+    <Compile Include="IServices\IDepartmentService.cs" />
+    <Compile Include="IServices\IProviderService.cs" />
+    <Compile Include="IServices\IRoleService.cs" />
+    <Compile Include="IServices\IStatusService.cs" />
+    <Compile Include="IServices\IUnitService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CategoryService.cs" />
+    <Compile Include="Services\DepartmentService.cs" />
+    <Compile Include="Services\ProviderService.cs" />
+    <Compile Include="Services\RoleService.cs" />
+    <Compile Include="Services\StatusService.cs" />
+    <Compile Include="Services\UnitService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeviceManager.Data\DeviceManager.Data.csproj">
+      <Project>{B0CD6E67-FE33-4989-9239-5D625D8DE91C}</Project>
+      <Name>DeviceManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeviceManager.Model\DeviceManager.Model.csproj">
+      <Project>{DB3B6671-BC57-49FB-B95B-986C927FA541}</Project>
+      <Name>DeviceManager.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

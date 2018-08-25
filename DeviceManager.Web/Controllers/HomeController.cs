@@ -1,15 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DeviceManager.Service.Services;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace DeviceManager.Web.Controllers
 {
     public class HomeController : Controller
     {
+
+        RoleService roleService;
+
+        public HomeController(RoleService _roleService)
+        {
+            roleService = _roleService;
+        }
+
+
         public ActionResult Index()
         {
+
+            var aa = 1;
+
             return View();
         }
 

@@ -1,6 +1,6 @@
 [MIGRATION]
 - First time run: enable-migrations
-- Create migration: Add-Migration InitialABC
+- Create migration: Add-Migration Initial
 - If update DB + insert DB to table : Update-Database
 - Add to Sql Server: Update-Database
 - refer: https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/
