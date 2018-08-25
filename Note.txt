@@ -1,0 +1,12 @@
+[MIGRATION]
+- First time run: enable-migrations
+- Create migration: Add-Migration InitialABC
+- If update DB + insert DB to table : Update-Database
+- Add to Sql Server: Update-Database
+- refer: https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/
+
+[REPOSITORY + UNIT OF WORK]
+- refer: https://www.dotnettricks.com/learn/mvc/implementing-repository-and-unit-of-work-patterns-with-mvc
+
+[Atribute]
+https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.7.2
