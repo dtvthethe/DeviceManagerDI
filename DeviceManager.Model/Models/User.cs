@@ -16,7 +16,7 @@ namespace DeviceManager.Model.Models
 
         [MaxLength(256)]
         [Required]
-        public string Password { get; set; }
+        public virtual string Password { get; set; }
 
         [Index("EmailIndex", IsUnique = true)]
         [MaxLength(256)]
@@ -31,6 +31,8 @@ namespace DeviceManager.Model.Models
         public string Address { set; get; }
 
         [Required]
+        [Column(TypeName = "Date")]
+        [DisplayFormat(ApplyFormatInEditMode = false, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime BirthDay { set; get; }
 
         public int IDDepartment { get; set; }

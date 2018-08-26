@@ -92,7 +92,7 @@ namespace DeviceManager.Data.Migrations
                         Email = c.String(maxLength: 256),
                         FullName = c.String(nullable: false, maxLength: 256),
                         Address = c.String(nullable: false, maxLength: 256),
-                        BirthDay = c.DateTime(nullable: false),
+                        BirthDay = c.DateTime(nullable: false, storeType: "date"),
                         IDDepartment = c.Int(nullable: false),
                         IDRole = c.Int(nullable: false),
                     })

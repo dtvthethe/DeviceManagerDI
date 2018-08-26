@@ -57,6 +57,12 @@ namespace DeviceManager.Web
             container.RegisterType<IProviderRepository, ProviderRepository>();
             container.RegisterType<IStatusRepository, StatusRepository>();
             container.RegisterType<IDepartmentRepository, DepartmentRepository>();
+            container.RegisterType<IUserRepository, UserRepository>();
+            container.RegisterType<IReceiptRepository, ReceiptRepository>();
+            container.RegisterType<IDeliveryRepository, DeliveryRepository>();
+            container.RegisterType<IReceiptDetailRepository, ReceiptDetailRepository>();
+            container.RegisterType<IDeliveryDetailRepository, DeliveryDetailRepository>();
+            container.RegisterType<IDeviceRepository, DeviceRepository>();
 
             container.RegisterType<ICategoryService, CategoryService>();
             container.RegisterType<IRoleService, RoleService>();
@@ -64,6 +70,12 @@ namespace DeviceManager.Web
             container.RegisterType<IProviderService, ProviderService>();
             container.RegisterType<IStatusService, StatusService>();
             container.RegisterType<IDepartmentService, DepartmentService>();
+            container.RegisterType<IUserService, UserService>();
+            container.RegisterType<IReceiptService, ReceiptService>();
+            container.RegisterType<IDeliveryService, DeliveryService>();
+            container.RegisterType<IReceiptDetailService, ReceiptDetailService>();
+            container.RegisterType<IDeviceService, DeviceService>();
+
 
         }
     }

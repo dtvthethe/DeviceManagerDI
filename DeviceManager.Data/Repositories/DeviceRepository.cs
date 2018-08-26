@@ -1,5 +1,7 @@
-﻿using DeviceManager.Data.Infrastructure;
+﻿using System.Collections.Generic;
+using DeviceManager.Data.Infrastructure;
 using DeviceManager.Model.Models;
+using System.Data.Entity;
 
 namespace DeviceManager.Data.IRepositories
 {
@@ -8,5 +10,10 @@ namespace DeviceManager.Data.IRepositories
         public DeviceRepository(IDbFactory dbFactory) : base(dbFactory)
         {
         }
+
+        //public IEnumerable<Device> GetAll()
+        //{
+        //    return DbContext.Devices.Include(d => d.Category).Include(d => d.Status).Include(d => d.Unit);
+        //}
     }
 }

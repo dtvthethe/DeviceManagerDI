@@ -11,6 +11,7 @@ namespace DeviceManager.Web.Controllers
 
         public HomeController(RoleService _roleService)
         {
+
             roleService = _roleService;
         }
 

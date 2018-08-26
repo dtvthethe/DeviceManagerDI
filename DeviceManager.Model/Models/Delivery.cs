@@ -1,5 +1,6 @@
 ﻿using DeviceManager.Model.Abstract;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -14,10 +15,12 @@ namespace DeviceManager.Model.Models
 
         [MaxLength(100)]
         [Column(TypeName = "nvarchar")]
+        [DisplayName("Delivery To User")]
         public string DeliveryToUser { set; get; }
 
         [MaxLength(100)]
         [Column(TypeName = "nvarchar")]
+        [DisplayName("Delivery From User")]
         public string DeliveryFromUser { set; get; }
 
         [ForeignKey("DeliveryToUser")]
